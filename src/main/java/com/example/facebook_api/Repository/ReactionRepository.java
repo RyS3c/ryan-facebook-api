@@ -7,6 +7,8 @@ import java.util.ArrayList;
 import java.util.UUID;
 
 public interface ReactionRepository extends JpaRepository<Reaction, UUID> {
+
+    Reaction save(Reaction reaction);
     ArrayList<Reaction> findAll();
-    Reaction findAllBypostID(UUID postID);
+//    Reaction findAllByReactID(UUID reactID);
 }

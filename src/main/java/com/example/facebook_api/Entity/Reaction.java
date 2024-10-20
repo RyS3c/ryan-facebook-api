@@ -13,7 +13,7 @@ public class Reaction {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private UUID postID;
+    private UUID reactID;
 
     private int likes;
     private int heart;
@@ -25,8 +25,8 @@ public class Reaction {
         super();
     }
 
-    public Reaction(UUID postID, int likes, int heart, int sad, int care, int funny) {
-        this.postID = postID;
+    public Reaction(UUID reactID, int likes, int heart, int sad, int care, int funny) {
+        this.reactID = reactID;
         this.likes = likes;
         this.heart = heart;
         this.sad = sad;
@@ -34,12 +34,12 @@ public class Reaction {
         this.funny = funny;
     }
 
-    public UUID getPostID() {
-        return postID;
+    public UUID getReactID() {
+        return reactID;
     }
 
-    public void setPostID(UUID postID) {
-        this.postID = postID;
+    public void setReactID(UUID reactID) {
+        this.reactID = reactID;
     }
 
     public int getLikes() {

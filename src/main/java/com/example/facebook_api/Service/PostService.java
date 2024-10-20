@@ -1,6 +1,5 @@
 package com.example.facebook_api.Service;
 
-import com.datastax.oss.driver.api.core.uuid.Uuids;
 import com.example.facebook_api.Entity.Post;
 import com.example.facebook_api.Repository.PostRepository;
 import org.springframework.beans.factory.annotation.Autowired;

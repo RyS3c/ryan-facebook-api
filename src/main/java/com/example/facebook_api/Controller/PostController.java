@@ -24,7 +24,6 @@ public class PostController {
     @GetMapping("/getPost")
     public ArrayList<Post> retrieveAllPost() {
         ArrayList<Post> result = postService.retrieveDataFromDB();
-        result.sort((e1, e2) -> e2.getDateTime().compareTo(e1.getDateTime()));
         return result;
     }
 
